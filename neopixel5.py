@@ -91,8 +91,11 @@ class NeoPixel:
 
         if (r != 0) and (g != 0) and (b != 0):
             if (r < 245) and (g < 245) and (b < 245):
+                n = 0
                 for i in color:
                     i += 10
+                    color[n] = i
+                    n += 1
         if (r == 0) and (g != 0) and (b != 0):
             if (g < 245) and (b < 245):
                 color[1] += 10
