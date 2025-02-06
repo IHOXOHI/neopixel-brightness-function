@@ -3,7 +3,16 @@ with on/off and brightness functions added
 
 to use it:
 
+from machine import Pin
+
 from neopixel5 import NeoPixel
 
-np = NeoPixel(Pin('X7'), led_count=1, intensity=0.5)
+np = NeoPixel(Pin('X7'), 1) #one neopixel
+
+np.fill((20,30,40))
+
+np.write()
+
+np.brightnessUp()
+
 ...
