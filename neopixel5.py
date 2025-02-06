@@ -157,6 +157,8 @@ class NeoPixel:
         self.color = color
         self.fill(color)
         self.write()
-        
+
+    def col(): # to return the actual color used
+        retrun self.color
 
                    
