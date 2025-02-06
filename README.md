@@ -1,7 +1,10 @@
+
+
+
 # NeoPixel driver for MicroPython
 # MIT license; Copyright (c) 2016 Damien P. George, 2021 Jim Mussared
-from machine import bitstream
 
+from machine import bitstream
 class NeoPixel:
     # G R B W
     ORDER = (1, 0, 2, 3)
